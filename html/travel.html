@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelino</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/travel.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- normalize sheet -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Pacifico&family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- nav and land -->
+    <div class="upper position-relative">
+        <nav class="navbar navbar-expand-lg bg-transparent top-0 ">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <img src="../images/TRAVELINO.png">
+                </div>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-list text-white fs-3 border-0"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto  gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#book">Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bacages">Bacages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="icon fs-lg-2 fs-md-3 me-lg-5">
+                        <i class="fa-solid fa-user-large " data-bs-toggle="modal" data-bs-target="#logModal"></i>
+                        <i class="fa-solid fa-magnifying-glass ms-lg-3 me-lg-5" data-bs-toggle="modal"
+                            data-bs-target="#searchModal"></i>
+                    </div>
+                    <div class="modal fade searchModal" id="searchModal" tabindex="-1"
+                        aria-labelledby="searchModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl ">
+                            <div class="modal-content ">
+                                <button type="button" class="btn-close ms-auto py-3 px-4 fs-4" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="search" class="col-form-label">Search</label>
+                                            <input type="search" class="form-control" id="search">
+                                        </div>
+                                    </form>
+                                </div>
+                                <button type="button" class="btn btn-cust mx-auto my-3">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade logModal" id="logModal" tabindex="-1" aria-labelledby="logModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <button type="button" class="btn-close ms-auto fs-3 p-4" data-bs-dismiss="modal" aria-label="Close"></button>                                <div class="modal-body">
+                                    <form class="row g-3 mx-auto p-5" style="max-width: 600px; margin-top: 180px;">
+                                        <div class="col-12">
+                                            <label for="inputEmail4" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="inputPassword4" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    Check me out
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="button" class="btn btn-cust my-3">log in</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="land z-1">
+            <div class="container">
+                <div class="welcome"></div>
+                <div class="content">
+                    <h3>
+                        Have a great travel with <span>Travelino</span>
+                    </h3>
+                </div>
+                <button class="btn btn-cust position-absolute z-1">More</button>
+            </div>
+        </div>
+        <div class="video">
+            <video loop autoplay muted>
+                <source src="../images/Have a perfect travel with travelino.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <!-- nav and land -->
+    <!-- book -->
+    <div class="book" id="book">
+        <div class="container ">
+            <div class="special-heading text-center">
+                <h1><span>b</span><span>o</span><span>o</span><span>k</span> <span>n</span><span>o</span><span>w</span>
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 mx-auto">
+                    <img src="../images/Untitled design (7).png" alt="" class="img-fluid">
+                    <img src="../images/Untitled design (8).png" alt="" class="img-fluid">
+                    <img src="../images/Untitled design (9).png" alt="" class="img-fluid">
+                    <img src="../images/Untitled design (10).png" alt="" class="img-fluid">
+                    <img src="../images/Untitled design (11).png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-6 mx-auto">
+                    <form class="row g-3 position-relative">
+                        <i class="fa-solid fa-plane"></i>
+                        <div class="col-12">
+                            <label for="inputEmail4" class="form-label">Where To</label>
+                            <input type="text" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputEmail4" class="form-label">How Many</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="number of guests">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputEmail4" class="form-label">Arrivels</label>
+                            <input type="date" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputEmail4" class="form-label">Leaving</label>
+                            <input type="date" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    i'm not a ropot
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-cust">Book Now</button>
+                        </div>
+                        <i class="fa-solid fa-plane"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- book -->
+    <!-- bacages -->
+    <div class="bacages" id="bacages">
+        <div class="container">
+            <div class="special-heading text-center">
+                <h1><span>b</span><span>a</span><span>c</span><span>a</span><span>g</span><span>e</span><span>s</span>
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 mx-auto">
+                    <div class="card mb-4 rounded-top-5 rounded-end-3 border-0 mx-auto" style="max-width: 23rem;">
+                        <img src="../images/Untitled design (7)1.png"
+                            class="card-img-top img-fluid rounded-top-circle rounded-end-5" alt="...">
+                        <div class="card-body" style="color: #124747;">
+                            <p class="card-text">
+                            <h4><i class="fa-solid fa-location-dot me-2 text-warning"></i>Egypt</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur laudantium in
+                                delectus.</p>
+                            <div class="stars text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="fs-4">$49.99 <span
+                                    class="text-decoration-line-through text-black-50">$89.99</span></p>
+                            </p>
+                        </div>
+                        <button class="btn btn-cust mx-auto">more</button>
+                    </div>
+                    <div class="card mb-4 rounded-top-5 rounded-end-3 border-0 mx-auto" style="max-width: 23rem;">
+                        <img src="../images/Untitled design (8)1.png"
+                            class="card-img-top img-fluid rounded-top-circle rounded-end-5" alt="...">
+                        <div class="card-body" style="color: #124747;">
+                            <p class="card-text">
+                            <h4><i class="fa-solid fa-location-dot me-2 text-warning"></i>India</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur laudantium in
+                                delectus.</p>
+                            <div class="stars text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </div>
+                            <p class="fs-4">$39.99 <span
+                                    class="text-decoration-line-through text-black-50">$79.99</span></p>
+                            </p>
+                        </div>
+                        <button class="btn btn-cust mx-auto">more</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 mx-auto">
+                    <div class="card mb-4 rounded-top-5 rounded-end-3 border-0 mx-auto" style="max-width: 23rem;">
+                        <img src="../images/Untitled design (9)1.png"
+                            class="card-img-top img-fluid rounded-top-circle rounded-end-5" alt="...">
+                        <div class="card-body" style="color: #124747;">
+                            <p class="card-text">
+                            <h4><i class="fa-solid fa-location-dot me-2 text-warning"></i>USA</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur laudantium in
+                                delectus.</p>
+                            <div class="stars text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="fs-4">$79.99 <span
+                                    class="text-decoration-line-through text-black-50">$99.99</span></p>
+                            </p>
+                        </div>
+                        <button class="btn btn-cust mx-auto">more</button>
+                    </div>
+                    <div class="card mb-4 rounded-top-5 rounded-end-3 border-0 mx-auto" style="max-width: 23rem;">
+                        <img src="../images/Untitled design (10)1.png"
+                            class="card-img-top img-fluid rounded-top-circle rounded-end-5" alt="...">
+                        <div class="card-body" style="color: #124747;">
+                            <p class="card-text">
+                            <h4><i class="fa-solid fa-location-dot me-2 text-warning"></i>Turkia</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur laudantium in
+                                delectus.</p>
+                            <div class="stars text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </div>
+                            <p class="fs-4">$69.99 <span
+                                    class="text-decoration-line-through text-black-50">$79.99</span></p>
+                            </p>
+                        </div>
+                        <button class="btn btn-cust mx-auto">more</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="card mb-4 rounded-top-5 rounded-end-3 border-0 mx-auto" style="max-width: 23rem;">
+                        <img src="../images/Untitled design (11)1.png"
+                            class="card-img-top img-fluid rounded-top-circle rounded-end-5" alt="...">
+                        <div class="card-body" style="color: #124747;">
+                            <p class="card-text">
+                            <h4><i class="fa-solid fa-location-dot me-2 text-warning"></i>Spain</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur laudantium in
+                                delectus.</p>
+                            <div class="stars text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="fs-4">$29.99 <span
+                                    class="text-decoration-line-through text-black-50">$88.99</span></p>
+                            </p>
+                        </div>
+                        <button class="btn btn-cust mx-auto">more</button>
+                    </div>
+                    <div class="card mb-4 rounded-top-5 rounded-end-3 border-0 mx-auto" style="max-width: 23rem;">
+                        <img src="../images/Untitled design (12).png"
+                            class="card-img-top img-fluid rounded-top-circle rounded-end-5" alt="...">
+                        <div class="card-body" style="color: #124747;">
+                            <p class="card-text">
+                            <h4><i class="fa-solid fa-location-dot me-2 text-warning"></i>Brazil</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur laudantium in
+                                delectus.</p>
+                            <div class="stars text-warning">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star-half-stroke"></i>
+                            </div>
+                            <p class="fs-4">$59.99 <span
+                                    class="text-decoration-line-through text-black-50">$79.99</span></p>
+                            </p>
+                        </div>
+                        <button class="btn btn-cust mx-auto">more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bacages -->
+    <!-- services -->
+    <div class="services">
+        <div class="container">
+            <div class="special-heading text-center">
+                <h1><span>s</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+                </h1>
+            </div>
+            <div class="row ">
+                <div class="col-lg-6 col-md-6 mt-4">
+                    <div class="card text-center p-3 rounded-4 mb-4">
+                        <i class="fa-solid fa-utensils"></i>
+                        <div class="card-body">
+                            <h3 class="card-title text-capitalize">food and drinks</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                                corrupti atque voluptatibus vel molestias blanditiis. Ex, quisquam magnam. Ipsa,
+                                inventore aut. Natus ullam voluptate odio aspernatur nihil itaque repudiandae nam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card text-center p-3 rounded-4">
+                        <i class="fa-solid fa-hotel"></i>
+                        <div class="card-body">
+                            <h3 class="card-title text-capitalize">5 stars hotels</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                                corrupti atque voluptatibus vel molestias blanditiis. Ex, quisquam magnam. Ipsa,
+                                inventore aut. Natus ullam voluptate odio aspernatur nihil itaque repudiandae nam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mt-4">
+                    <div class="card text-center p-3 rounded-4 mb-4">
+                        <i class="fa-solid fa-car"></i>
+                        <div class="card-body">
+                            <h3 class="card-title text-capitalize">Transportation</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                                corrupti atque voluptatibus vel molestias blanditiis. Ex, quisquam magnam. Ipsa,
+                                inventore aut. Natus ullam voluptate odio aspernatur nihil itaque repudiandae nam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card text-center p-3 rounded-4">
+                        <i class="fa-solid fa-sailboat"></i>
+                        <div class="card-body">
+                            <h3 class="card-title text-capitalize">activities</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                                corrupti atque voluptatibus vel molestias blanditiis. Ex, quisquam magnam. Ipsa,
+                                inventore aut. Natus ullam voluptate odio aspernatur nihil itaque repudiandae nam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <!-- gallery -->
+    <div class="gallery" id="gallery">
+        <div class="container">
+            <div class="special-heading text-center">
+                <h1><span>g</span><span>a</span><span>l</span><span>l</span><span>e</span><span>r</span><span>y</span>
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 mt-4 mx-auto">
+                    <div class="card-img">
+                        <img src="../images/Untitled design (71).png" class="img-fluid">
+                    </div>
+                    <div class="card-img">
+                        <img src="../images/Untitled design (81).png" class="img-fluid">
+                    </div>
+                    <div class="card-img">
+                        <img src="../images/Untitled design (91).png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 mt-4 mx-auto">
+                    <div class="card-img">
+                        <img src="../images/Untitled design (101).png" class="img-fluid">
+                    </div>
+                    <div class="card-img">
+                        <img src="../images/Untitled design (111).png" class="img-fluid">
+                    </div>
+                    <div class="card-img">
+                        <img src="../images/Untitled design (121).png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 mt-4 mx-auto">
+                    <div class="card-img">
+                        <img src="../images/Untitled design (13).png" class="img-fluid">
+                    </div>
+                    <div class="card-img">
+                        <img src="../images/Untitled design (11).png" class="img-fluid">
+                    </div>
+                    <div class="card-img">
+                        <img src="../images/Untitled design (81).png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gallery -->
+    <!-- reviews -->
+    <div class="reviews" id="reviews">
+        <div class="container">
+            <div class="special-heading text-center">
+                <h1><span>R</span><span>e</span><span>v</span><span>i</span><span>e</span><span>w</span><span>s</span>
+                </h1>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card text-center rounded-4 p-3 border-0">
+                                    <div class="card-body">
+                                        <img src="../images/1.png" alt="" class="img-fluid rounded-circle mb-4"
+                                            style="box-shadow:9px 10px 5px 5px #124747;">
+                                        <h3 class="card-title">Maria Andro</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ea, tempore. Ducimus explicabo, assumenda id tenetur laudantium suscipit
+                                            quam vel sunt dicta, molestias magnam consectetur ipsum error velit
+                                            necessitatibus repudiandae modi?.</p>
+                                        <div class="stars text-warning fs-4">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card text-center rounded-4 p-3 border-0">
+                                    <div class="card-body">
+                                        <img src="../images/2.png" alt="" class="img-fluid rounded-circle mb-4"
+                                            style="box-shadow:9px 10px 5px 5px #124747;">
+                                        <h3 class="card-title">Mario Andro</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ea, tempore. Ducimus explicabo, assumenda id tenetur laudantium suscipit
+                                            quam vel sunt dicta, molestias magnam consectetur ipsum error velit
+                                            necessitatibus repudiandae modi?.</p>
+                                        <div class="stars text-warning fs-4">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card text-center rounded-4 p-3 border-0">
+                                    <div class="card-body">
+                                        <img src="../images/3.png" alt="" class="img-fluid rounded-circle mb-4"
+                                            style="box-shadow:9px 10px 5px 5px #124747;">
+                                        <h3 class="card-title">Maria Andro</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ea, tempore. Ducimus explicabo, assumenda id tenetur laudantium suscipit
+                                            quam vel sunt dicta, molestias magnam consectetur ipsum error velit
+                                            necessitatibus repudiandae modi?.</p>
+                                        <div class="stars text-warning fs-4">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card text-center rounded-4 p-3 border-0">
+                                    <div class="card-body">
+                                        <img src="../images/1.png" alt="" class="img-fluid rounded-circle mb-4"
+                                            style="box-shadow:9px 10px 5px 5px #124747;">
+                                        <h3 class="card-title">Maria Andro</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ea, tempore. Ducimus explicabo, assumenda id tenetur laudantium suscipit
+                                            quam vel sunt dicta, molestias magnam consectetur ipsum error velit
+                                            necessitatibus repudiandae modi?.</p>
+                                        <div class="stars text-warning fs-4">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card text-center rounded-4 p-3 border-0">
+                                    <div class="card-body">
+                                        <img src="../images/5.png" alt="" class="img-fluid rounded-circle mb-4"
+                                            style="box-shadow:9px 10px 5px 5px #124747;">
+                                        <h3 class="card-title">Mario Andro</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ea, tempore. Ducimus explicabo, assumenda id tenetur laudantium suscipit
+                                            quam vel sunt dicta, molestias magnam consectetur ipsum error velit
+                                            necessitatibus repudiandae modi?.</p>
+                                        <div class="stars text-warning fs-4">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card text-center rounded-4 p-3 border-0">
+                                    <div class="card-body">
+                                        <img src="../images/3.png" alt="" class="img-fluid rounded-circle mb-4"
+                                            style="box-shadow:9px 10px 5px 5px #124747;">
+                                        <h3 class="card-title">Maria Andro</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ea, tempore. Ducimus explicabo, assumenda id tenetur laudantium suscipit
+                                            quam vel sunt dicta, molestias magnam consectetur ipsum error velit
+                                            necessitatibus repudiandae modi?.</p>
+                                        <div class="stars text-warning fs-4">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card text-center rounded-4 p-3 border-0">
+                                    <div class="card-body">
+                                        <img src="../images/2.png" alt="" class="img-fluid rounded-circle mb-4"
+                                            style="box-shadow:9px 10px 5px 5px #124747;">
+                                        <h3 class="card-title">Maria Andro</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ea, tempore. Ducimus explicabo, assumenda id tenetur laudantium suscipit
+                                            quam vel sunt dicta, molestias magnam consectetur ipsum error velit
+                                            necessitatibus repudiandae modi?.</p>
+                                        <div class="stars text-warning fs-4">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card text-center rounded-4 p-3 border-0">
+                                    <div class="card-body">
+                                        <img src="../images/3.png" alt="" class="img-fluid rounded-circle mb-4"
+                                            style="box-shadow:9px 10px 5px 5px #124747;">
+                                        <h3 class="card-title">Mario Andro</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ea, tempore. Ducimus explicabo, assumenda id tenetur laudantium suscipit
+                                            quam vel sunt dicta, molestias magnam consectetur ipsum error velit
+                                            necessitatibus repudiandae modi?.</p>
+                                        <div class="stars text-warning fs-4">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card text-center rounded-4 p-3 border-0">
+                                    <div class="card-body">
+                                        <img src="../images/5.png" alt="" class="img-fluid rounded-circle mb-4"
+                                            style="box-shadow:9px 10px 5px 5px #124747;">
+                                        <h3 class="card-title">Maria Andro</h3>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Ea, tempore. Ducimus explicabo, assumenda id tenetur laudantium suscipit
+                                            quam vel sunt dicta, molestias magnam consectetur ipsum error velit
+                                            necessitatibus repudiandae modi?.</p>
+                                        <div class="stars text-warning fs-4">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- reviews -->
+    <!-- contact -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="special-heading text-center">
+                <h1><span>c</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-auto mx-auto">
+                    <form class="row g-3 p-5" style="max-width: 700px;">
+                        <div class="col-12">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2">
+                        </div>
+                        <div class="col-12">
+                            <label for="exampleFormControlTextarea1" class="form-label">Your Massage</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                cols="8"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-cust">submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <!-- <img src="../images/TRAVELINO.png" class="img-fluid"> -->
+            <ul class=" mx-auto gap-lg-5 gap-md-4 gap-sm-3 gap-3">
+                <li>
+                    <a class=" active" aria-current="page" href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#book">Book</a>
+                </li>
+                <li>
+                    <a href="#bacages">Bacages</a>
+                </li>
+                <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="#reviews">Reviews</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="foot text-center ">
+                <i class="fa-brands fa-facebook mx-3 text-primary"></i>
+                <i class="fa-brands fa-twitter mx-3 text-info"></i>
+                <i class="fa-brands fa-youtube mx-3" style="color: rgb(230, 6, 6);"></i>
+                <i class="fa-brands fa-linkedin mx-3"></i>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <!-- bootstrap -->
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- font awsome -->
+    <script src="../js/all.min.js"></script>
+    <!-- animation on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- js -->
+    <script src="../js/travel.js"></script>
+</body>
+
+</html>
